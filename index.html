@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesos Rápidos - Consolata</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <div class="header">
+        <img src="logo_consolata.png" alt="Logo Consolata" class="logo">
+        <h1>Accesos Rápidos</h1>
+        <p>Accede a todas tus herramientas desde aquí</p>
+    </div>
+
+    <!-- Contenedor de opciones con los tres links -->
+    <div class="options-container">
+        <div class="option" onclick="openLink('https://dti.mendoza.edu.ar/gem/pad')">
+            <img src="icono-notas.jpeg" alt="Notas">
+            <p>GEM PAD</p>
+        </div>
+        <div class="option" onclick="openLink('https://consolatavirtual.com/login/index.php')">
+            <img src="icono-pagina.png" alt="Página Principal">
+            <p>Consolata Virtual</p>
+        </div>
+        <div class="option" onclick="openLink('http://colegioconsolataimc.com.ar/virtual-book/')">
+            <img src="icono-pagina1.png" alt="Biblioteca">
+            <p>Biblioteca Virtual</p>
+        </div>
+    </div>
+
+    <!-- Mensaje entre derechos y barra de navegación -->
+    <div class="message">
+        <p>No vinimos porque sí vinimos para avanzar.</p>
+       
+    </div>
+    
+    <!-- Derechos reservados -->
+    <div class="footer">
+        <p>2024 Derechos reservados Tiziano Guevara</p>
+    </div>
+
+    <!-- Barra de navegación inferior -->
+    <div class="navbar">
+        <a href="#inicio">Inicio</a>
+        <a href="#perfil" onclick="showComingSoon()">Perfil</a>
+    </div>
+
+    <!-- Ventana emergente -->
+    <div id="comingSoon" class="coming-soon" style="display: none;">
+        <p>Próximamente tendremos perfiles</p>
+        <button onclick="closeComingSoon()">Cerrar</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

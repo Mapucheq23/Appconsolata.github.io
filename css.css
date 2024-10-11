@@ -1,0 +1,156 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+/* Encabezado con logo */
+.header {
+    background-color: #002f6c; /* Azul oscuro Consolata */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de opciones con los tres links */
+.options-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.option {
+    text-align: center;
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px;
+    width: 100px; /* Tamaño uniforme de los rectángulos */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:nth-child(1) {
+    background-color: #e2d4b7; /* Dorado Consolata */
+}
+
+.option:nth-child(2) {
+    background-color: #007f3e; /* Verde Consolata */
+}
+
+.option:nth-child(3) {
+    background-color: #d3431a; /* Rojo Consolata */
+}
+
+.option:hover {
+    opacity: 0.8; /* Efecto de opacidad al hacer hover */
+}
+
+.option img {
+    width: 50px; /* Ajusta el tamaño de los iconos */
+    height: auto;
+}
+
+.option p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #002f6c; /* Azul Consolata */
+}
+
+/* Contenido adicional */
+.additional-content {
+    text-align: center;
+    margin: 20px 0;
+    color: #002f6c;
+    font-size: 16px;
+}
+
+/* Derechos reservados */
+.footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #002f6c; /* Azul Consolata */
+    color: white;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+}
+
+/* Mensaje entre derechos reservados y barra de navegación */
+.message {
+    text-align: center;
+    background-color: #e2d4b7; /* Fondo dorado */
+    color: #002f6c; /* Texto en azul Consolata */
+    padding: 20px 0;
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* Barra de navegación inferior */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #002f6c; /* Azul Consolata */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    align-items: center;
+    border-top: 4px solid #e2d4b7; /* Borde dorado superior */
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Estilos de los enlaces de la barra */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #e2d4b7; /* Color dorado al hacer hover */
+}
+
+/* Mensaje emergente para "Próximamente" */
+.coming-soon {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e2d4b7; /* Dorado Consolata */
+    color: #002f6c; /* Texto en azul Consolata */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2000;
+}
+
+.coming-soon p {
+    margin: 0 0 10px;
+}
+
+.coming-soon button {
+    padding: 8px 12px;
+    background-color: #002f6c; /* Botón azul Consolata */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.coming-soon button:hover {
+    background-color: #001d47;
+}
